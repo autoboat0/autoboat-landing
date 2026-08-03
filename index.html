@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoBoat.in - Official WhatsApp API, CRM, Mini-Apps & In-Chat Payments</title>
+  <meta name="description" content="Automate customer conversations, launch WhatsApp Mini-Apps, collect in-chat payments, manage leads, and scale sales with Official WhatsApp Business API & CRM." />
+  <link rel="icon" type="image/jpeg" href="autoboat-logo.jpg" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container announcement-content">
+      <div class="announcement-left">
+        <span class="badge-mini">Meta Official Partner</span>
+        <p>🔥 Launch WhatsApp Mini-Apps & In-Chat Payments! Get 5X Lead Conversion with Free Setup.</p>
+        <a href="#demo-form" class="announcement-link">Get Free Demo &rarr;</a>
+      </div>
+      <div class="announcement-socials">
+        <a href="https://www.instagram.com/autoboat0" target="_blank" rel="noopener" aria-label="Instagram" class="top-social-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61591389632653" target="_blank" rel="noopener" aria-label="Facebook" class="top-social-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/autoboat0" target="_blank" rel="noopener" aria-label="LinkedIn" class="top-social-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#" class="logo-group">
+        <img src="autoboat-logo.jpg" alt="AutoBoat Logo" class="brand-logo-img" />
+        <div class="logo-text">
+          <span class="brand-name">AutoBoat.in</span>
+          <span class="brand-sub">WhatsApp API & SaaS</span>
+        </div>
+      </a>
+
+      <!-- Updated Header Navigation Order: Solutions → Documentation → Pricing → Why Us → Features → FAQ -->
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-list">
+          <li><a href="#offerings" class="nav-link">Solutions</a></li>
+          <li><a href="https://helpdocumentation.gitbook.io/user" class="nav-link">Documentation</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="#why-us" class="nav-link">Why Us</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:8591070484" class="phone-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-sm">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <span>8591070484</span>
+        </a>
+        
+        <!-- LOGIN BUTTON REDIRECTING TO https://wa.autoboat.in/login -->
+        <a href="https://wa.autoboat.in/login" target="_blank" rel="noopener" class="btn btn-secondary btn-sm nav-login-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-sm"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+          <span>Login</span>
+        </a>
+
+        <button class="btn btn-primary open-demo-modal">Book Demo</button>
+        
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECTION 1: HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-partner-badge">
+            <span class="meta-icon">✓</span> Official Meta Partner • WhatsApp Mini-Apps & Payments
+          </div>
+          <h1 class="hero-headline">
+            Official WhatsApp API, CRM, WhatsApp Mini-Apps & In-Chat Payments
+          </h1>
+          <p class="hero-subheadline">
+            Automate customer conversations, launch interactive WhatsApp Mini-Apps, collect instant UPI/Card payments inside chats, manage leads by source & department—all from one platform.
+          </p>
+
+          <div class="hero-cta-group">
+            <button class="btn btn-primary btn-lg open-demo-modal">
+              <span>Get Free Demo</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-arrow"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <a href="https://wa.me/918591070484?text=Hi%20AutoBoat,%20I%20want%20to%20see%20a%20demo%20of%20WhatsApp%20Mini-Apps%20%26%20Payments." target="_blank" rel="noopener" class="btn btn-secondary btn-lg">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="whatsapp-btn-icon"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.84 9.84 0 0 0 12.04 2z"/></svg>
+              <span>Talk to Expert</span>
+            </a>
+          </div>
+
+          <div class="hero-trust-highlights">
+            <div class="trust-pill">
+              <svg viewBox="0 0 24 24" class="check-icon"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Green-Tick Verification</span>
+            </div>
+            <div class="trust-pill">
+              <svg viewBox="0 0 24 24" class="check-icon"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>WhatsApp Mini-Apps</span>
+            </div>
+            <div class="trust-pill">
+              <svg viewBox="0 0 24 24" class="check-icon"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Instant In-Chat Payments</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Side Showcase -->
+        <div class="hero-showcase">
+          <div class="showcase-card glass-panel">
+            <div class="showcase-tabs">
+              <button class="showcase-tab active" data-tab="tab-whatsapp">
+                <span class="tab-dot green"></span> WhatsApp Inbox
+              </button>
+              <button class="showcase-tab" data-tab="tab-miniapp">
+                <span class="tab-dot orange"></span> Mini-App & Payments
+              </button>
+              <button class="showcase-tab" data-tab="tab-crm">
+                <span class="tab-dot blue"></span> Lead CRM
+              </button>
+            </div>
+
+            <div class="tab-content active" id="tab-whatsapp">
+              <div class="mockup-chat-header">
+                <img src="autoboat-logo.jpg" alt="AutoBoat Logo" class="chat-avatar-img" />
+                <div class="chat-info">
+                  <div class="chat-name">
+                    AutoBoat Official
+                    <span class="green-tick-badge" title="Official Verified Account">✓</span>
+                  </div>
+                  <div class="chat-sub">Shared Multi-Agent Inbox • Online</div>
+                </div>
+                <div class="chat-header-actions">
+                  <span class="badge-agent">Routing: Sales Dept</span>
+                </div>
+              </div>
+
+              <div class="mockup-chat-body">
+                <div class="chat-msg msg-received">
+                  <div class="msg-text">Hi! I saw your ad. Can I view your catalog and book a consultation directly in WhatsApp?</div>
+                  <span class="msg-time">10:42 AM</span>
+                </div>
+
+                <div class="chat-msg msg-sent">
+                  <div class="msg-text">Hello! 👋 Yes! Launch our <strong>WhatsApp Mini-App</strong> below to pick your slot and pay via UPI instantly.</div>
+                  <span class="msg-time">10:43 AM ✓✓</span>
+                </div>
+
+                <div class="chat-msg msg-interactive">
+                  <div class="interactive-title">📱 AutoBoat Interactive Mini-App:</div>
+                  <div class="interactive-buttons">
+                    <span class="i-btn highlight-btn">🛍️ Launch In-Chat Storefront</span>
+                    <span class="i-btn">💳 Pay ₹499 via UPI / GPay</span>
+                    <span class="i-btn">📊 Lead Source: Meta Ad #204</span>
+                  </div>
+                </div>
+
+                <div class="chat-msg msg-sent auto-response">
+                  <div class="msg-text">⚡ <em>Payment Verified!</em> Invoice generated & Lead routed to Sales Department.</div>
+                  <span class="msg-time">10:43 AM ✓✓</span>
+                </div>
+              </div>
+
+              <div class="mockup-chat-footer">
+                <input type="text" placeholder="Type a message or trigger mini-app..." disabled value="Launch Mini-App & collect payment..." />
+                <button class="chat-send-btn">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="tab-content" id="tab-miniapp">
+              <div class="mockup-miniapp-header">
+                <div class="b-title">📱 WhatsApp Mini-Apps & In-Chat Commerce</div>
+                <span class="b-status active-pulse">Zero Friction</span>
+              </div>
+              <div class="miniapp-screen-mock">
+                <div class="miniapp-top-bar">
+                  <span>🛍️ AutoBoat Storefront Mini-App</span>
+                  <span class="close-x">✕</span>
+                </div>
+                <div class="miniapp-card-item">
+                  <div class="mini-prod-info">
+                    <strong>Enterprise WhatsApp API Setup</strong>
+                    <p>Green-Tick + 5 Multi-Agent Licenses</p>
+                  </div>
+                  <span class="mini-price">₹4,999</span>
+                </div>
+                <div class="payment-method-selector">
+                  <div class="pay-option active">
+                    <span>⚡ UPI / GPay / PhonePe</span>
+                    <span class="tick">✓</span>
+                  </div>
+                  <div class="pay-option">
+                    <span>💳 Credit / Debit Card</span>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-block btn-sm" style="margin-top:10px;">Pay ₹4,999 Inside WhatsApp &rarr;</button>
+              </div>
+            </div>
+
+            <div class="tab-content" id="tab-crm">
+              <div class="mockup-crm-header">
+                <div class="crm-title">Sales CRM & Department Routing</div>
+                <span class="crm-stat">Source Attribution: 100% Active</span>
+              </div>
+              <div class="crm-columns">
+                <div class="crm-col">
+                  <div class="crm-col-header">Sales Dept <span class="count">14</span></div>
+                  <div class="crm-card">
+                    <div class="lead-name">Vikram Malhotra</div>
+                    <div class="lead-source">Source: Instagram Meta Ad</div>
+                    <div class="lead-value">₹2,50,000</div>
+                    <span class="lead-tag green">Paid via Mini-App</span>
+                  </div>
+                </div>
+
+                <div class="crm-col">
+                  <div class="crm-col-header">Support Dept <span class="count">8</span></div>
+                  <div class="crm-card highlight-card">
+                    <div class="lead-name">Anand Tech Solutions</div>
+                    <div class="lead-source">Source: Web Chat Widget</div>
+                    <div class="lead-value">₹5,00,000</div>
+                    <span class="lead-tag purple">Routed to Tech Support</span>
+                  </div>
+                </div>
+
+                <div class="crm-col">
+                  <div class="crm-col-header">Closed Deals <span class="count">42</span></div>
+                  <div class="crm-card win-card">
+                    <div class="lead-name">Apex Healthcare</div>
+                    <div class="lead-source">Source: WhatsApp Mini-App</div>
+                    <div class="lead-value">₹8,50,000</div>
+                    <span class="lead-tag success">UPI Confirmed</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: TRUSTED BY -->
+    <section class="trusted-section">
+      <div class="container">
+        <p class="trusted-headline">Trusted by 5,000+ businesses across India to automate customer communication & in-chat payments</p>
+        
+        <div class="trusted-logos-grid">
+          <div class="trusted-item"><span class="trusted-icon">🏥</span><span class="trusted-name">Healthcare Clinics</span></div>
+          <div class="trusted-item"><span class="trusted-icon">🏫</span><span class="trusted-name">EdTech & Schools</span></div>
+          <div class="trusted-item"><span class="trusted-icon">🏢</span><span class="trusted-name">Real Estate</span></div>
+          <div class="trusted-item"><span class="trusted-icon">🛒</span><span class="trusted-name">E-Commerce & Retail</span></div>
+          <div class="trusted-item"><span class="trusted-icon">🚗</span><span class="trusted-name">Automobile</span></div>
+          <div class="trusted-item"><span class="trusted-icon">💰</span><span class="trusted-name">Finance & FinTech</span></div>
+        </div>
+
+        <div class="trusted-meta-banner">
+          <div class="meta-seal">
+            <svg viewBox="0 0 24 24" class="svg-seal"><path fill="#25D366" d="M12 2L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-3zm-2 16l-4-4 1.41-1.41L10 15.17l6.59-6.59L18 10l-8 8z"/></svg>
+            <div>
+              <strong>Official Meta Business Solution Partner</strong>
+              <p>Direct Meta API • WhatsApp Mini-Apps • Native Payments • 100% Compliant</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: WHAT WE OFFER -->
+    <section class="offerings-section section-padding" id="offerings">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Complete Business Automation SaaS</span>
+          <h2 class="section-title">What We Offer</h2>
+          <p class="section-desc">Unified SaaS platform engineered with cutting-edge WhatsApp Mini-Apps, In-Chat Payments, CRM, and Marketing Automation.</p>
+        </div>
+
+        <div class="offerings-grid">
+          <div class="offer-card offer-featured">
+            <div class="offer-badge">Core Engine</div>
+            <div class="offer-icon-wrapper green-bg">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="card-svg"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.84 9.84 0 0 0 12.04 2z"/></svg>
+            </div>
+            <h3 class="offer-title">Official WhatsApp API</h3>
+            <p class="offer-summary">Connect directly with Meta's official API to scale your customer outreach without risk of number bans.</p>
+            <ul class="offer-list">
+              <li><span class="check-mark">✔</span> Green-tick ready support</li>
+              <li><span class="check-mark">✔</span> Multi-agent team inbox</li>
+              <li><span class="check-mark">✔</span> Broadcast campaigns</li>
+              <li><span class="check-mark">✔</span> Template messaging</li>
+            </ul>
+            <button class="btn btn-outline full-width open-demo-modal">Get WhatsApp API</button>
+          </div>
+
+          <div class="offer-card offer-featured-usp">
+            <div class="offer-badge star-badge">⭐ Top USP</div>
+            <div class="offer-icon-wrapper orange-bg">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="card-svg"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            </div>
+            <h3 class="offer-title">WhatsApp Mini-Apps</h3>
+            <p class="offer-summary">Build interactive app experiences inside WhatsApp—catalogs, forms, bookings & storefronts without redirecting to external websites.</p>
+            <ul class="offer-list">
+              <li><span class="check-mark">✔</span> In-Chat Storefronts</li>
+              <li><span class="check-mark">✔</span> Interactive Booking Forms</li>
+              <li><span class="check-mark">✔</span> Product Catalogs</li>
+              <li><span class="check-mark">✔</span> Zero Web Drop-Off</li>
+            </ul>
+            <button class="btn btn-primary full-width open-demo-modal">Explore Mini-Apps</button>
+          </div>
+
+          <div class="offer-card offer-featured-usp">
+            <div class="offer-badge star-badge">⭐ Top USP</div>
+            <div class="offer-icon-wrapper teal-bg">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="card-svg"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+            </div>
+            <h3 class="offer-title">In-Chat Payments</h3>
+            <p class="offer-summary">Collect UPI, Credit/Debit cards & net banking payments directly inside WhatsApp chats for instant deal closure.</p>
+            <ul class="offer-list">
+              <li><span class="check-mark">✔</span> Instant UPI & GPay Payments</li>
+              <li><span class="check-mark">✔</span> Automated Invoices</li>
+              <li><span class="check-mark">✔</span> Payment Gateway Sync</li>
+              <li><span class="check-mark">✔</span> Instant Payment Receipts</li>
+            </ul>
+            <button class="btn btn-primary full-width open-demo-modal">Collect Payments</button>
+          </div>
+
+          <div class="offer-card">
+            <div class="offer-icon-wrapper blue-bg">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="card-svg"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="offer-title">CRM & Department Routing</h3>
+            <p class="offer-summary">Capture leads from ads & web widgets automatically with multi-department routing (Sales, Support, Accounts).</p>
+            <ul class="offer-list">
+              <li><span class="check-mark">✔</span> Lead Management & Attribution</li>
+              <li><span class="check-mark">✔</span> Sales Pipeline Kanban</li>
+              <li><span class="check-mark">✔</span> Multi-Department Routing</li>
+              <li><span class="check-mark">✔</span> Team Collaboration</li>
+            </ul>
+            <button class="btn btn-outline full-width open-demo-modal">Explore CRM</button>
+          </div>
+
+          <div class="offer-card">
+            <div class="offer-icon-wrapper purple-bg">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="card-svg"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <h3 class="offer-title">Marketing & Dynamic Workflows</h3>
+            <p class="offer-summary">Automate lead nurtures with visual AI chatbots, auto-responders, and personalized dynamic content journeys.</p>
+            <ul class="offer-list">
+              <li><span class="check-mark">✔</span> Visual Chatbot Builder</li>
+              <li><span class="check-mark">✔</span> Dynamic Customer Journeys</li>
+              <li><span class="check-mark">✔</span> Follow-up Automation</li>
+              <li><span class="check-mark">✔</span> Drip Campaigns</li>
+            </ul>
+            <button class="btn btn-outline full-width open-demo-modal">Automate Marketing</button>
+          </div>
+
+          <div class="offer-card">
+            <div class="offer-icon-wrapper orange-bg">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="card-svg"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3 class="offer-title">Omnichannel & Web Chat Widget</h3>
+            <p class="offer-summary">Connect website visitors directly to WhatsApp with our customizable Chat Widget, Bulk SMS & RCS messaging.</p>
+            <ul class="offer-list">
+              <li><span class="check-mark">✔</span> Website WhatsApp Chat Widget</li>
+              <li><span class="check-mark">✔</span> Bulk SMS & DLT OTPs</li>
+              <li><span class="check-mark">✔</span> RCS Rich Messaging</li>
+              <li><span class="check-mark">✔</span> Unified Channels Hub</li>
+            </ul>
+            <button class="btn btn-outline full-width open-demo-modal">Get Omnichannel</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAAS MENU FEATURES SHOWCASE -->
+    <section class="saas-features-highlight section-padding bg-navy text-white" id="mini-apps">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle text-green">Supercharge Customer Conversion</span>
+          <h2 class="section-title text-white">Next-Gen SaaS Features & USPs</h2>
+          <p class="section-desc text-muted">Why leading brands choose AutoBoat over traditional agency or basic WhatsApp tools.</p>
+        </div>
+
+        <div class="saas-usp-grid">
+          <div class="usp-box highlight-border">
+            <div class="usp-badge-pill">🔥 Key USP</div>
+            <div class="usp-icon-wrap">📱</div>
+            <h3>WhatsApp Mini-Apps</h3>
+            <p>Run mini web applications inside WhatsApp chat windows. Let customers browse products, select appointment slots, fill lead forms, and place orders without leaving WhatsApp.</p>
+          </div>
+
+          <div class="usp-box highlight-border">
+            <div class="usp-badge-pill">💳 Instant Sales</div>
+            <div class="usp-icon-wrap">🏦</div>
+            <h3>In-Chat Payments</h3>
+            <p>Integrated payment gateways (UPI, GPay, Paytm, Cards) inside WhatsApp. Customers pay instantly in chat with automatic payment verification and invoice generation.</p>
+          </div>
+
+          <div class="usp-box">
+            <div class="usp-icon-wrap">💬</div>
+            <h3>Website Chat Widget</h3>
+            <p>Embed an elegant WhatsApp chat widget on your website to convert cold traffic into opted-in WhatsApp leads with 1 click.</p>
+          </div>
+
+          <div class="usp-box">
+            <div class="usp-icon-wrap">📍</div>
+            <h3>Lead Source Attribution</h3>
+            <p>Track exactly where each lead came from (Meta Ads, Google Ads, Website Widget, QR Codes) and analyze campaign ROI effortlessly.</p>
+          </div>
+
+          <div class="usp-box">
+            <div class="usp-icon-wrap">🏢</div>
+            <h3>Multi-Department Routing</h3>
+            <p>Automatically route customer conversations to the right department—Sales, Support, Billing, or Technical Team—based on intent.</p>
+          </div>
+
+          <div class="usp-box">
+            <div class="usp-icon-wrap">⚡</div>
+            <h3>Dynamic Customer Experience</h3>
+            <p>Deliver personalized product recommendations, dynamic pricing, and automated follow-ups tailored to user behavior.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING SECTION WITH PROPER VISUAL SPACING -->
+    <section class="pricing-section section-padding bg-light" id="pricing">
+      <div class="container">
+        <div class="section-header text-center pricing-header">
+          <span class="section-subtitle">Transparent & Affordable</span>
+          <h2 class="section-title">Simple, Transparent Pricing</h2>
+          <p class="section-desc">Official Meta Partner with <strong>Zero Markup</strong> on message costs. Choose the perfect plan for your business growth.</p>
+          
+          <!-- Pricing Duration Switcher -->
+          <div class="pricing-switcher-tabs">
+            <button class="price-tab-btn" data-period="monthly">Monthly</button>
+            <button class="price-tab-btn active" data-period="quarterly">Quarterly <span class="tab-badge text-orange">Save ₹2,000</span></button>
+            <button class="price-tab-btn" data-period="yearly">Yearly <span class="tab-badge text-green">Save 50%</span></button>
+          </div>
+        </div>
+
+        <div class="pricing-cards-grid">
+          <!-- Monthly Plan -->
+          <div class="price-card">
+            <div class="price-badge-wrap"><span class="price-badge badge-starter">Starter</span></div>
+            <h3 class="price-plan-name">Monthly Plan</h3>
+            <p class="price-sub">Perfect for small businesses getting started with WhatsApp API.</p>
+            <div class="price-amount-row">
+              <span class="price-currency">₹</span>
+              <span class="price-amount">2,999</span>
+              <span class="price-period">/ month</span>
+            </div>
+            <p class="price-save-note">Billed monthly • Cancel anytime</p>
+            <div class="price-divider"></div>
+            <ul class="price-features-list">
+              <li><span class="chk-icon">✓</span> Official Meta Business API</li>
+              <li><span class="chk-icon">✓</span> Bulk WhatsApp Messaging</li>
+              <li><span class="chk-icon">✓</span> Shared Team Inbox</li>
+              <li><span class="chk-icon">✓</span> Multi-Agent Live Chat</li>
+              <li><span class="chk-icon">✓</span> 1 Automated Chatbot</li>
+              <li><span class="chk-icon">✓</span> 1,000 Free Service Conversations</li>
+              <li><span class="chk-icon">✓</span> Contact Tags & Segmentation</li>
+              <li><span class="chk-icon">✓</span> Template Message Creation</li>
+              <li><span class="chk-icon">✓</span> Zero Markup on Meta Rates</li>
+              <li><span class="chk-icon">✓</span> Free Setup & Onboarding</li>
+            </ul>
+            <button class="btn btn-outline full-width open-demo-modal">Get Started Monthly</button>
+          </div>
+
+          <!-- Quarterly Plan (Featured) -->
+          <div class="price-card price-featured">
+            <div class="price-badge-wrap"><span class="price-badge badge-popular">🔥 Most Popular</span></div>
+            <h3 class="price-plan-name">Quarterly Plan</h3>
+            <p class="price-sub">Best for growing businesses scaling campaigns & leads.</p>
+            <div class="price-amount-row">
+              <span class="price-currency">₹</span>
+              <span class="price-amount">6,999</span>
+              <span class="price-period">/ 3 months</span>
+            </div>
+            <p class="price-save-note text-green">Effective ₹2,333/mo — Save ₹2,000!</p>
+            <div class="price-divider"></div>
+            <ul class="price-features-list">
+              <li><span class="chk-icon">✓</span> Everything in Monthly Plan</li>
+              <li><span class="chk-icon">✓</span> <strong>WhatsApp Mini-Apps Integration</strong></li>
+              <li><span class="chk-icon">✓</span> <strong>In-Chat UPI Payments & Invoices</strong></li>
+              <li><span class="chk-icon">✓</span> <strong>2 AI Chatbots</strong></li>
+              <li><span class="chk-icon">✓</span> <strong>Click to WhatsApp Ads Manager</strong></li>
+              <li><span class="chk-icon">✓</span> Lead Source Attribution</li>
+              <li><span class="chk-icon">✓</span> Multi-Department Routing</li>
+              <li><span class="chk-icon">✓</span> Website Chat Widget</li>
+              <li><span class="chk-icon">✓</span> Zero Markup on Meta Rates</li>
+              <li><span class="chk-icon">✓</span> Free Guided Setup & Training</li>
+            </ul>
+            <button class="btn btn-primary full-width open-demo-modal">Get Started Quarterly</button>
+          </div>
+
+          <!-- Yearly Plan -->
+          <div class="price-card">
+            <div class="price-badge-wrap"><span class="price-badge badge-value">⭐ Best Value</span></div>
+            <h3 class="price-plan-name">Yearly Plan</h3>
+            <p class="price-sub">Complete automation suite with unlimited scale & priority support.</p>
+            <div class="price-amount-row">
+              <span class="price-currency">₹</span>
+              <span class="price-amount">15,999</span>
+              <span class="price-period">/ year</span>
+            </div>
+            <p class="price-save-note text-green">Effective ₹1,333/mo — Save 50%!</p>
+            <div class="price-divider"></div>
+            <ul class="price-features-list">
+              <li><span class="chk-icon">✓</span> Everything in Quarterly Plan</li>
+              <li><span class="chk-icon">✓</span> <strong>Unlimited AI Chatbots</strong></li>
+              <li><span class="chk-icon">✓</span> <strong>Unlimited WhatsApp Mini-Apps</strong></li>
+              <li><span class="chk-icon">✓</span> <strong>Native In-Chat UPI & Card Gateways</strong></li>
+              <li><span class="chk-icon">✓</span> <strong>Priority 24/7 VIP Phone Support</strong></li>
+              <li><span class="chk-icon">✓</span> Dedicated Account Growth Manager</li>
+              <li><span class="chk-icon">✓</span> Custom CRM & Webhook Integrations</li>
+              <li><span class="chk-icon">✓</span> Green Tick Verification Assistance</li>
+              <li><span class="chk-icon">✓</span> Zero Markup on Meta Rates</li>
+              <li><span class="chk-icon">✓</span> Free Setup + GST Tax Invoice</li>
+            </ul>
+            <button class="btn btn-outline full-width open-demo-modal">Get Started Yearly</button>
+          </div>
+        </div>
+
+        <!-- Guarantee Note Row -->
+        <div class="price-guarantee-row">
+          <div class="p-guarantee-item">
+            <span class="p-g-icon">✓</span>
+            <span><strong>Free Setup</strong> — No hidden onboarding fees</span>
+          </div>
+          <div class="p-guarantee-item">
+            <span class="p-g-icon">✓</span>
+            <span><strong>Zero Mark Up</strong> — Pay Meta's direct official rates</span>
+          </div>
+          <div class="p-guarantee-item">
+            <span class="p-g-icon">✓</span>
+            <span><strong>GST Tax Invoice</strong> — 100% tax compliant for Indian businesses</span>
+          </div>
+          <div class="p-guarantee-item">
+            <span class="p-g-icon">✓</span>
+            <span><strong>Cancel Anytime</strong> — No lock-in contracts</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: WHY CHOOSE OUR PLATFORM -->
+    <section class="why-us-section section-padding" id="why-us">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Built For Scale & Reliability</span>
+          <h2 class="section-title">Why Choose Our Platform</h2>
+          <p class="section-desc">Everything you need to deliver world-class WhatsApp support & automated sales campaigns without complexity.</p>
+        </div>
+
+        <div class="why-us-grid">
+          <div class="why-card"><div class="why-icon">✅</div><h4>Official Meta Partner Solution</h4><p>100% compliant with Meta Business Policies. Zero risk of account bans.</p></div>
+          <div class="why-card"><div class="why-icon">✅</div><h4>WhatsApp Mini-Apps</h4><p>Interactive storefronts, forms, and catalogs running directly inside WhatsApp chats.</p></div>
+          <div class="why-card"><div class="why-icon">✅</div><h4>In-Chat UPI Payments</h4><p>Accept instant payments in chat with automated receipt and invoice generation.</p></div>
+          <div class="why-card"><div class="why-icon">✅</div><h4>Multi-Department Routing</h4><p>Automatically assign leads to Sales, Support, Billing, or Operations teams.</p></div>
+          <div class="why-card"><div class="why-icon">✅</div><h4>Lead Source Attribution</h4><p>Track lead sources from Meta ads, Google ads, website widgets, and QR codes.</p></div>
+          <div class="why-card"><div class="why-icon">✅</div><h4>No Coding Required</h4><p>Drag-and-drop workflow builders and visual chatbot setup—no developer needed.</p></div>
+          <div class="why-card"><div class="why-icon">✅</div><h4>Cloud Based & Fast Setup</h4><p>Go live in under 5 minutes with guided onboarding and Meta Cloud infrastructure.</p></div>
+          <div class="why-card"><div class="why-icon">✅</div><h4>Enterprise Security & APIs</h4><p>End-to-end encryption, role-based access, REST APIs, and webhook triggers.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: HOW IT WORKS -->
+    <section class="how-it-works-section section-padding" id="how-it-works">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Fast & Simple Onboarding</span>
+          <h2 class="section-title">How It Works</h2>
+          <p class="section-desc">Get your Official WhatsApp API, Mini-Apps & CRM up and running in 4 easy steps.</p>
+        </div>
+
+        <div class="steps-wrapper">
+          <div class="step-card">
+            <div class="step-number">Step 1</div>
+            <div class="step-icon-bg">📅</div>
+            <h3>Book Demo</h3>
+            <p>Schedule a live demo with our WhatsApp growth experts to inspect your business requirements.</p>
+          </div>
+          <div class="step-arrow">↓</div>
+          <div class="step-card">
+            <div class="step-number">Step 2</div>
+            <div class="step-icon-bg">📑</div>
+            <h3>Business Verification</h3>
+            <p>Our team helps you complete Meta Business Manager verification effortlessly in 24 hours.</p>
+          </div>
+          <div class="step-arrow">↓</div>
+          <div class="step-card">
+            <div class="step-number">Step 3</div>
+            <div class="step-icon-bg">⚡</div>
+            <h3>API & Mini-App Setup</h3>
+            <p>Connect your phone number, activate Mini-Apps & In-Chat Payments, and get Green-Tick Badge.</p>
+          </div>
+          <div class="step-arrow">↓</div>
+          <div class="step-card step-highlight">
+            <div class="step-number">Step 4</div>
+            <div class="step-icon-bg">🚀</div>
+            <h3>Start Automating</h3>
+            <p>Launch bulk broadcasts, automate lead assignments, collect payments & scale revenue!</p>
+          </div>
+        </div>
+
+        <div class="how-cta-container text-center">
+          <button class="btn btn-primary btn-lg open-demo-modal">Start Step 1: Book Free Demo Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: FEATURES SECTION -->
+    <section class="features-section section-padding bg-dark text-white" id="features">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle text-green">Power-Packed Platform</span>
+          <h2 class="section-title text-white">All-In-One Enterprise Features</h2>
+          <p class="section-desc text-muted">Designed to streamline communication, automate payments, and drive 5X sales conversions.</p>
+        </div>
+
+        <div class="features-two-col">
+          <div class="features-left">
+            <div class="feature-mockup-frame">
+              <div class="frame-bar">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="frame-title" id="mockupTitle">Shared Team Inbox</span>
+              </div>
+              <div class="frame-content" id="featureMockupContent">
+                <div class="feature-preview-screen active" id="prev-inbox">
+                  <div class="preview-badge">Shared Team Inbox View</div>
+                  <div class="preview-mock-chat">
+                    <div class="pm-row">
+                      <div class="pm-avatar">CS</div>
+                      <div class="pm-body">
+                        <strong>Customer: Rahul M.</strong>
+                        <p>Need urgent quote for 50 licenses.</p>
+                      </div>
+                      <span class="pm-status assigned">Assigned: Sales Dept</span>
+                    </div>
+                    <div class="pm-row">
+                      <div class="pm-avatar">SK</div>
+                      <div class="pm-body">
+                        <strong>Customer: Sneh K.</strong>
+                        <p>Completed ₹4,999 UPI payment in WhatsApp.</p>
+                      </div>
+                      <span class="pm-status bot">Auto-Replied & Verified</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="features-right">
+            <div class="features-interactive-list">
+              <div class="feature-item active" data-feature="inbox" data-title="Shared Team Inbox" data-desc="One single WhatsApp number shared across multiple sales & support agents."><div class="f-icon">📥</div><div class="f-text"><h4>Shared Team Inbox</h4><p>Multiple team members reply from one official WhatsApp number with permissions.</p></div></div>
+              <div class="feature-item" data-feature="miniapp" data-title="WhatsApp Mini-Apps" data-desc="Interactive mini web apps running inside WhatsApp chat windows."><div class="f-icon">📱</div><div class="f-text"><h4>WhatsApp Mini-Apps (USP)</h4><p>Interactive storefronts, forms, and catalogs without leaving WhatsApp.</p></div></div>
+              <div class="feature-item" data-feature="payments" data-title="In-Chat Payments" data-desc="Collect UPI, GPay & Card payments inside chat with instant invoice generation."><div class="f-icon">💳</div><div class="f-text"><h4>In-Chat Payments (USP)</h4><p>Native payment gateway integration to close deals directly in WhatsApp.</p></div></div>
+              <div class="feature-item" data-feature="widget" data-title="Website Chat Widget" data-desc="Customizable WhatsApp chat widget for websites."><div class="f-icon">💬</div><div class="f-text"><h4>Website Chat Widget</h4><p>Bridge website traffic into WhatsApp chats with custom welcome prompts.</p></div></div>
+              <div class="feature-item" data-feature="leadsource" data-title="Lead Source Attribution" data-desc="Track exactly which Meta ad, Google ad, or QR code generated each lead."><div class="f-icon">📍</div><div class="f-text"><h4>Lead Source Attribution</h4><p>Measure exact marketing ROI from click to final WhatsApp deal closure.</p></div></div>
+              <div class="feature-item" data-feature="department" data-title="Multi-Department Routing" data-desc="Automatically route chats to Sales, Support, Accounts, or Operations teams."><div class="f-icon">🏢</div><div class="f-text"><h4>Multi-Department Routing</h4><p>Smart lead assignment based on customer intent or rules.</p></div></div>
+              <div class="feature-item" data-feature="chatbot" data-title="No-Code Chatbot Automation" data-desc="Build multi-step conversational AI chatbots."><div class="f-icon">🤖</div><div class="f-text"><h4>Chatbot Automation</h4><p>24/7 automated responses to qualify leads even off-hours.</p></div></div>
+              <div class="feature-item" data-feature="crm" data-title="Sales CRM & Pipeline" data-desc="Kanban sales pipeline tracker linked directly to WhatsApp history."><div class="f-icon">📊</div><div class="f-text"><h4>Sales CRM</h4><p>Track lead stages from enquiry to payment confirmation.</p></div></div>
+              <div class="feature-item" data-feature="campaign" data-title="Campaign Manager & Broadcasts" data-desc="Send bulk targeted broadcasts to opted-in leads."><div class="f-icon">🚀</div><div class="f-text"><h4>Broadcast Campaigns</h4><p>High-speed broadcasts with interactive CTA buttons & personalized tags.</p></div></div>
+              <div class="feature-item" data-feature="dynamic" data-title="Dynamic Customer Experience" data-desc="Personalized journeys based on real-time user behavior."><div class="f-icon">⚡</div><div class="f-text"><h4>Dynamic Experience</h4><p>Tailored user flows that increase customer retention.</p></div></div>
+              <div class="feature-item" data-feature="workflow" data-title="Workflow Automation" data-desc="Automate follow-up reminders & cart recoveries."><div class="f-icon">⚙️</div><div class="f-text"><h4>Workflow Automation</h4><p>Trigger-based drip sequences that keep leads warm until purchase.</p></div></div>
+              <div class="feature-item" data-feature="reports" data-title="Real-Time Analytics & Reports" data-desc="Detailed insights on open rates & payment conversions."><div class="f-icon">📈</div><div class="f-text"><h4>Reports & Analytics</h4><p>Data-driven metrics to optimize team speed and revenue.</p></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: INDUSTRIES WE SERVE -->
+    <section class="industries-section section-padding" id="industries">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Tailored Solutions</span>
+          <h2 class="section-title">Industries We Serve</h2>
+          <p class="section-desc">Proven automation blueprints for every major industry across India.</p>
+        </div>
+
+        <div class="industries-grid">
+          <div class="industry-card"><div class="ind-icon">🏥</div><h3>Healthcare</h3><p>Appointment Mini-Apps & UPI fee collections.</p></div>
+          <div class="industry-card"><div class="ind-icon">🏫</div><h3>Education</h3><p>Admission forms Mini-App & fee payment links.</p></div>
+          <div class="industry-card"><div class="ind-icon">🏢</div><h3>Real Estate</h3><p>Site visit booking Mini-App & high-intent lead routing.</p></div>
+          <div class="industry-card"><div class="ind-icon">🛒</div><h3>E-commerce</h3><p>WhatsApp Storefront Mini-App & in-chat payments.</p></div>
+          <div class="industry-card"><div class="ind-icon">🏨</div><h3>Hospitality</h3><p>Room booking Mini-App & instant UPI advance payment.</p></div>
+          <div class="industry-card"><div class="ind-icon">🏭</div><h3>Manufacturing</h3><p>B2B catalog Mini-App & dealer lead routing.</p></div>
+          <div class="industry-card"><div class="ind-icon">🚗</div><h3>Automobile</h3><p>Test drive booking Mini-App & service payment links.</p></div>
+          <div class="industry-card"><div class="ind-icon">💰</div><h3>Finance</h3><p>Loan application Mini-App & OTP verification.</p></div>
+          <div class="industry-card"><div class="ind-icon">🎓</div><h3>Coaching</h3><p>Batch enrollment Mini-App & ticket payments.</p></div>
+          <div class="industry-card"><div class="ind-icon">🧑‍💼</div><h3>Agencies</h3><p>Multi-client WhatsApp API & lead attribution.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: BENEFITS -->
+    <section class="benefits-section section-padding bg-light" id="benefits">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Transform Your Business</span>
+          <h2 class="section-title">Before vs After AutoBoat</h2>
+          <p class="section-desc">See the dramatic shift when you upgrade to WhatsApp API, Mini-Apps & In-Chat Payments.</p>
+        </div>
+
+        <div class="comparison-grid">
+          <div class="comp-card comp-before">
+            <div class="comp-header">
+              <span class="comp-badge red-badge">Traditional Method</span>
+              <h3>Without AutoBoat</h3>
+            </div>
+            <ul class="comp-list">
+              <li><span class="comp-cross">❌</span><div><strong>Website Drop-offs</strong><p>Sending WhatsApp users to external website links causes 70%+ lead drop-off.</p></div></li>
+              <li><span class="comp-cross">❌</span><div><strong>Delayed Payments</strong><p>Manual bank transfers or external links delay payments and lose sales.</p></div></li>
+              <li><span class="comp-cross">❌</span><div><strong>Unknown Lead Sources</strong><p>No idea which ad or campaign generated incoming WhatsApp leads.</p></div></li>
+              <li><span class="comp-cross">❌</span><div><strong>Scattered Department Communications</strong><p>Teams arguing over unassigned customer chats.</p></div></li>
+            </ul>
+          </div>
+
+          <div class="comp-card comp-after">
+            <div class="comp-header">
+              <span class="comp-badge green-badge">With AutoBoat SaaS</span>
+              <h3>With AutoBoat API, Mini-Apps & Payments</h3>
+            </div>
+            <ul class="comp-list">
+              <li><span class="comp-check">✅</span><div><strong>WhatsApp Mini-Apps</strong><p>In-chat forms & catalogs keep 100% of user interactions inside WhatsApp.</p></div></li>
+              <li><span class="comp-check">✅</span><div><strong>Instant In-Chat Payments</strong><p>Collect UPI, GPay & Card payments inside chat for immediate deal closure.</p></div></li>
+              <li><span class="comp-check">✅</span><div><strong>Lead Source Attribution</strong><p>Exact tracking of revenue generated from each Meta ad & website widget.</p></div></li>
+              <li><span class="comp-check">✅</span><div><strong>Smart Multi-Department Routing</strong><p>Automated chat assignment to Sales, Support, or Billing departments.</p></div></li>
+            </ul>
+            <div class="comp-cta">
+              <button class="btn btn-primary full-width open-demo-modal">Upgrade Your Sales Today</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9: PLATFORM HIGHLIGHTS -->
+    <section class="highlights-section section-padding bg-navy text-white" id="highlights">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle text-green">Enterprise Metrics</span>
+          <h2 class="section-title text-white">Platform Highlights</h2>
+          <p class="section-desc text-muted">Reliable infrastructure built to support millions of messages & in-chat payments.</p>
+        </div>
+
+        <div class="highlights-grid">
+          <div class="stat-card"><div class="stat-icon">⚡</div><div class="stat-number">99.9%</div><div class="stat-label">Platform Uptime</div></div>
+          <div class="stat-card"><div class="stat-icon">📱</div><div class="stat-number">Mini-Apps</div><div class="stat-label">In-Chat Storefronts</div></div>
+          <div class="stat-card"><div class="stat-icon">💳</div><div class="stat-number">UPI Pay</div><div class="stat-label">In-Chat Payments</div></div>
+          <div class="stat-card"><div class="stat-icon">🏢</div><div class="stat-number">Routing</div><div class="stat-label">Multi-Department</div></div>
+          <div class="stat-card"><div class="stat-icon">👥</div><div class="stat-number">Multi-User</div><div class="stat-label">Shared Team Inbox</div></div>
+          <div class="stat-card"><div class="stat-icon">☁️</div><div class="stat-number">Meta Cloud</div><div class="stat-label">Enterprise Hosting</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 10: FREQUENTLY ASKED QUESTIONS -->
+    <section class="faq-section section-padding" id="faq">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Got Questions?</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-desc">Everything you need to know about setting up Official WhatsApp API, Mini-Apps, In-Chat Payments, and AutoBoat CRM.</p>
+        </div>
+
+        <div class="faq-wrapper">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false"><span>What are WhatsApp Mini-Apps and how do they work?</span><span class="faq-icon">+</span></button>
+            <div class="faq-answer"><p>WhatsApp Mini-Apps are interactive web-like experiences (catalogs, booking forms, lead forms, storefronts) that run directly inside WhatsApp chat windows without leaving WhatsApp.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false"><span>Can customers make payments directly inside WhatsApp?</span><span class="faq-icon">+</span></button>
+            <div class="faq-answer"><p>Yes! AutoBoat integrates seamlessly with major payment gateways (UPI, GPay, Paytm, Cards) so customers can make payments directly inside WhatsApp chats.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false"><span>What is Official WhatsApp API?</span><span class="faq-icon">+</span></button>
+            <div class="faq-answer"><p>The Official WhatsApp Business API is Meta's enterprise solution that enables growing businesses to automate customer conversations, send bulk broadcast campaigns legally, and obtain the Green-Tick badge.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false"><span>How does Multi-Department Routing and Lead Attribution work?</span><span class="faq-icon">+</span></button>
+            <div class="faq-answer"><p>AutoBoat automatically tracks the exact source of every incoming lead and routes it directly to the right department—such as Sales, Support, or Billing.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false"><span>How long does setup take?</span><span class="faq-icon">+</span></button>
+            <div class="faq-answer"><p>With AutoBoat, setup takes less than 5 to 10 minutes! Our team assists you in connecting your Meta Business Manager and activating your phone number on Meta Cloud API right away.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false"><span>Is CRM included in the platform?</span><span class="faq-icon">+</span></button>
+            <div class="faq-answer"><p>Yes, AutoBoat includes an all-in-one Sales CRM built directly into the platform to manage incoming leads, track pipelines, and assign agents.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false"><span>Do you provide a Website Chat Widget and SMS/RCS?</span><span class="faq-icon">+</span></button>
+            <div class="faq-answer"><p>Yes! AutoBoat supports Official WhatsApp API, customizable Website Chat Widget, DLT-approved Bulk SMS, and interactive RCS Business Messaging.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 11: FINAL CTA -->
+    <section class="final-cta-section section-padding bg-gradient-cta text-white" id="cta-banner">
+      <div class="container text-center">
+        <div class="cta-box">
+          <span class="cta-top-badge">⚡ Take Action Today</span>
+          <h2 class="cta-headline">Ready to Automate Your Customer Communication, Mini-Apps & Payments?</h2>
+          <p class="cta-subheadline">
+            Start using Official WhatsApp API, Mini-Apps, In-Chat Payments, CRM, and Marketing Automation to convert more leads and close deals faster.
+          </p>
+          <div class="cta-buttons-group">
+            <button class="btn btn-primary btn-xl open-demo-modal">
+              <span>Book Free Demo</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-arrow"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <a href="https://wa.me/918591070484?text=Hi%20AutoBoat,%20I%20want%20to%20contact%20sales%20for%20WhatsApp%20API%20%26%20Mini-Apps." target="_blank" rel="noopener" class="btn btn-secondary-white btn-xl">
+              <span>Contact Sales</span>
+            </a>
+          </div>
+          <p class="cta-subtext">🔒 No Credit Card Required • Free Guided Demo • 5-Min Setup</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 12: CONTACT FORM / DEMO REQUEST -->
+    <section class="contact-section section-padding" id="demo-form">
+      <div class="container">
+        <div class="contact-card-wrapper glass-panel-shadow">
+          <div class="contact-grid">
+            <div class="form-side">
+              <h3 class="form-title">Request Free Live Demo</h3>
+              <p class="form-desc">Fill in your details below and our WhatsApp Automation & Mini-App Expert will get in touch within 15 minutes.</p>
+
+              <form id="demoRequestForm" class="demo-form">
+                <div class="form-group">
+                  <label for="fullName">Full Name <span class="req">*</span></label>
+                  <input type="text" id="fullName" name="fullName" required placeholder="e.g. Rahul Sharma" />
+                </div>
+
+                <div class="form-group">
+                  <label for="companyName">Company Name <span class="req">*</span></label>
+                  <input type="text" id="companyName" name="companyName" required placeholder="e.g. Acme Innovations Pvt Ltd" />
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="mobileNumber">Mobile / WhatsApp Number <span class="req">*</span></label>
+                    <div class="phone-input-group">
+                      <span class="country-code">+91</span>
+                      <input type="tel" id="mobileNumber" name="mobileNumber" pattern="[0-9]{10}" required placeholder="8591070484" />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="businessEmail">Business Email <span class="req">*</span></label>
+                    <input type="email" id="businessEmail" name="businessEmail" required placeholder="name@company.com" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="messagingVolume">Primary SaaS Requirement <span class="opt">(Optional)</span></label>
+                  <select id="messagingVolume" name="messagingVolume">
+                    <option value="">Select Primary Requirement</option>
+                    <option value="miniapps">WhatsApp Mini-Apps & In-Chat Storefronts</option>
+                    <option value="payments">In-Chat UPI Payments & Invoicing</option>
+                    <option value="api">Official Meta WhatsApp API & Green Tick</option>
+                    <option value="crm">Lead CRM & Multi-Department Routing</option>
+                    <option value="full">All-In-One Enterprise Automation Suite</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="businessRequirement">Business Requirement</label>
+                  <textarea id="businessRequirement" name="businessRequirement" rows="3" placeholder="Tell us about your sales goals, current setup, or WhatsApp Mini-App ideas..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitFormBtn">
+                  <span>Request Demo</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-arrow"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+              </form>
+            </div>
+
+            <!-- Contact Info Side -->
+            <div class="info-side">
+              <div class="info-box">
+                <span class="info-badge">Direct Contact</span>
+                <h3>Need Immediate Assistance?</h3>
+                <p>Speak directly with our Official WhatsApp API & Mini-App specialist right now.</p>
+
+                <div class="contact-details">
+                  <a href="tel:8591070484" class="contact-detail-item">
+                    <div class="c-icon green">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <div>
+                      <span class="c-label">Call / WhatsApp</span>
+                      <strong class="c-val">+91 85910 70484</strong>
+                    </div>
+                  </a>
+
+                  <a href="mailto:autoboat0@gmail.com" class="contact-detail-item">
+                    <div class="c-icon blue">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </div>
+                    <div>
+                      <span class="c-label">Official Email</span>
+                      <strong class="c-val">autoboat0@gmail.com</strong>
+                    </div>
+                  </a>
+
+                  <a href="https://wa.me/918591070484?text=Hi%20AutoBoat,%20I%20am%20ready%20to%20start%20my%20WhatsApp%20API%20%26%20Mini-Apps%20demo." target="_blank" rel="noopener" class="contact-detail-item wa-direct-card">
+                    <div class="c-icon whatsapp-green">
+                      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.84 9.84 0 0 0 12.04 2z"/></svg>
+                    </div>
+                    <div>
+                      <span class="c-label">Instant WhatsApp Chat</span>
+                      <strong class="c-val">Click to Chat on WhatsApp &rarr;</strong>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="contact-social-wrap">
+                  <span class="social-header-label">Connect With Us:</span>
+                  <div class="social-links-row">
+                    <a href="https://www.instagram.com/autoboat0" target="_blank" rel="noopener" aria-label="Instagram" class="social-btn instagram-btn">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                      <span>Instagram</span>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61591389632653" target="_blank" rel="noopener" aria-label="Facebook" class="social-btn facebook-btn">
+                      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                      <span>Facebook</span>
+                    </a>
+                    <a href="https://www.linkedin.com/company/autoboat0" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-btn linkedin-btn">
+                      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                      <span>LinkedIn</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="meta-verification-box">
+                  <span class="meta-check">✓</span>
+                  <span>Verified Meta WhatsApp API & Mini-App Partner</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer bg-navy text-white">
+    <div class="container footer-container">
+      <!-- Col 1: Brand Info -->
+      <div class="footer-col brand-col">
+        <a href="#" class="logo-group footer-logo-group">
+          <img src="autoboat-logo.jpg" alt="AutoBoat Logo" class="brand-logo-img footer-logo-img" />
+          <div class="logo-text">
+            <span class="brand-name footer-brand-name">AutoBoat.in</span>
+            <span class="brand-sub footer-brand-sub">WhatsApp API & SaaS</span>
+          </div>
+        </a>
+        <p class="footer-desc">Official WhatsApp Business API, WhatsApp Mini-Apps, In-Chat Payments, CRM & Marketing Automation SaaS platform.</p>
+        
+        <div class="footer-contact-block">
+          <a href="mailto:autoboat0@gmail.com" class="f-link-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>autoboat0@gmail.com</span>
+          </a>
+          <a href="tel:8591070484" class="f-link-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+91 85910 70484</span>
+          </a>
+        </div>
+
+        <!-- Stylish Social Media Buttons -->
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/autoboat0" target="_blank" rel="noopener" aria-label="Instagram" class="social-pill instagram-pill" title="Follow AutoBoat on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <span>Instagram</span>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61591389632653" target="_blank" rel="noopener" aria-label="Facebook" class="social-pill facebook-pill" title="Follow AutoBoat on Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            <span>Facebook</span>
+          </a>
+          <a href="https://www.linkedin.com/company/autoboat0" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-pill linkedin-pill" title="Follow AutoBoat on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 2: Solutions -->
+      <div class="footer-col">
+        <h4>Solutions</h4>
+        <ul class="footer-links-list">
+          <li><a href="#offerings">WhatsApp Business API</a></li>
+          <li><a href="#mini-apps">WhatsApp Mini-Apps</a></li>
+          <li><a href="#mini-apps">In-Chat Payments</a></li>
+          <li><a href="#offerings">Lead CRM & Routing</a></li>
+          <li><a href="#offerings">Omnichannel Chat Widget</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Quick Links & Legal -->
+      <div class="footer-col">
+        <h4>Quick Links & Legal</h4>
+        <ul class="footer-links-list">
+          <li><a href="#mini-apps">SaaS Features & USPs</a></li>
+          <li><a href="#pricing">Pricing Plans</a></li>
+          <li><a href="#features">12 Core Features</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+          <li><a href="https://wa.autoboat.in/login" target="_blank" rel="noopener">Client Login</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Highlighted Contact & Demo Box -->
+      <div class="footer-col footer-card-box">
+        <h4>Get In Touch</h4>
+        <p class="f-box-sub">Ready to 5X your customer conversions?</p>
+        <div class="f-box-details">
+          <p><strong>AutoBoat WhatsApp SaaS</strong></p>
+          <p>Phone: +91 85910 70484</p>
+          <p>Email: autoboat0@gmail.com</p>
+        </div>
+        <button class="btn btn-primary full-width open-demo-modal mt-3">
+          <span>Book Free Demo</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-arrow"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>© 2026 <strong>AutoBoat.in</strong>. All rights reserved. Meta Official Solution Provider. | <a href="privacy-policy.html" style="color:#CBD5E1">Privacy Policy</a> | <a href="terms-and-conditions.html" style="color:#CBD5E1">Terms & Conditions</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE STICKY BOTTOM CTA BAR -->
+  <div class="mobile-sticky-bar">
+    <div class="sticky-text">
+      <strong>WhatsApp Mini-Apps & Payments</strong>
+      <span>Book your free live demo</span>
+    </div>
+    <button class="btn btn-primary open-demo-modal">Book Free Demo</button>
+  </div>
+
+  <!-- DEMO BOOKING MODAL -->
+  <div class="modal-backdrop" id="demoModal">
+    <div class="modal-card">
+      <button class="modal-close" id="modalCloseBtn">&times;</button>
+      <div class="modal-header">
+        <div class="modal-badge">Official WhatsApp API & Mini-Apps</div>
+        <h2>Book Your Free Demo</h2>
+        <p>Experience how AutoBoat Mini-Apps and In-Chat Payments 5X your sales.</p>
+      </div>
+
+      <form id="modalDemoForm" class="demo-form">
+        <div class="form-group">
+          <label for="mFullName">Full Name *</label>
+          <input type="text" id="mFullName" required placeholder="e.g. Vikram Verma" />
+        </div>
+
+        <div class="form-group">
+          <label for="mCompany">Company Name *</label>
+          <input type="text" id="mCompany" required placeholder="e.g. Star Enterprises" />
+        </div>
+
+        <div class="form-group">
+          <label for="mMobile">WhatsApp Mobile Number *</label>
+          <div class="phone-input-group">
+            <span class="country-code">+91</span>
+            <input type="tel" id="mMobile" pattern="[0-9]{10}" required placeholder="8591070484" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="mEmail">Business Email *</label>
+          <input type="email" id="mEmail" required placeholder="name@company.com" />
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block btn-lg">Submit & Get Demo Call</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- FLOATING INTERACTIVE WHATSAPP WIDGET -->
+  <div class="floating-wa-widget" id="waWidget">
+    <div class="wa-chat-window" id="waChatWindow">
+      <div class="wa-window-header">
+        <div class="wa-avatar-wrap">
+          <img src="autoboat-logo.jpg" alt="AutoBoat Logo" class="wa-avatar-img" />
+          <span class="green-tick">✓</span>
+        </div>
+        <div>
+          <strong>AutoBoat Support</strong>
+          <p>Online • Meta Verified Partner</p>
+        </div>
+        <button class="wa-close-btn" id="waCloseBtn">&times;</button>
+      </div>
+
+      <div class="wa-window-body">
+        <div class="wa-msg">
+          👋 Hi there! Want to see how WhatsApp Mini-Apps & In-Chat Payments can 5X your business?
+        </div>
+        <div class="wa-msg bot-reply">
+          Call or WhatsApp us at <strong>+91 8591070484</strong> or click below to start a live demo!
+        </div>
+      </div>
+
+      <div class="wa-window-footer">
+        <a href="https://wa.me/918591070484?text=Hi%20AutoBoat,%20I%20want%20to%20book%20a%20free%20demo%20for%20Mini-Apps%20%26%20Payments." target="_blank" rel="noopener" class="btn btn-primary btn-block">
+          Open Chat on WhatsApp &rarr;
+        </a>
+      </div>
+    </div>
+
+    <button class="wa-trigger-btn" id="waTriggerBtn" title="Chat on WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.84 9.84 0 0 0 12.04 2z"/></svg>
+      <span class="wa-unread-badge">1</span>
+    </button>
+  </div>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
