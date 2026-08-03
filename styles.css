@@ -1,5 +1,5 @@
 /* ==========================================================================
-   AutoBoat.in - Official WhatsApp API & CRM Mobile-First Responsive Stylesheet
+   AutoBoat.in - Official WhatsApp API & CRM Landing Page Styles
    Theme Palette:
    - Primary WhatsApp Green: #25D366
    - Dark WhatsApp Green: #128C7E
@@ -40,7 +40,7 @@
   --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Global Reset & Strict Mobile Boundaries */
+/* Reset & Strict Fluid Boundaries */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -49,7 +49,7 @@
 
 html, body {
   width: 100%;
-  max-width: 100vw;
+  max-width: 100%;
   overflow-x: hidden !important;
   position: relative;
 }
@@ -65,12 +65,11 @@ body {
   color: var(--slate-dark);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  -webkit-tap-highlight-color: transparent;
 }
 
 @media (max-width: 768px) {
   body {
-    padding-bottom: 72px; /* Clearance for sticky bottom bar */
+    padding-bottom: 70px;
   }
 }
 
@@ -87,10 +86,9 @@ ul {
 img, svg {
   max-width: 100%;
   height: auto;
-  display: block;
 }
 
-/* Fluid Container System */
+/* Layout Container */
 .container {
   width: 100%;
   max-width: 1280px;
@@ -106,7 +104,7 @@ img, svg {
 }
 
 .section-padding {
-  padding: 80px 0;
+  padding: 90px 0;
 }
 
 @media (max-width: 768px) {
@@ -126,6 +124,10 @@ img, svg {
 .bg-navy { background-color: var(--navy-dark); }
 .bg-gradient-cta {
   background: linear-gradient(135deg, var(--navy-dark) 0%, #162238 50%, var(--wa-green-dark) 100%);
+}
+
+.mobile-only-nav-item {
+  display: none;
 }
 
 /* Buttons */
@@ -249,7 +251,6 @@ img, svg {
   padding: 8px 0;
   border-bottom: 1px solid rgba(255,255,255,0.08);
   width: 100%;
-  overflow: hidden;
 }
 
 .announcement-content {
@@ -324,7 +325,7 @@ img, svg {
   }
 }
 
-/* Header & Mobile Drawer Navigation */
+/* Site Header - Perfect Mobile Responsiveness */
 .site-header {
   position: sticky;
   top: 0;
@@ -341,7 +342,7 @@ img, svg {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  height: 66px;
+  height: 68px;
   width: 100%;
 }
 
@@ -472,7 +473,7 @@ img, svg {
 
 /* HERO SECTION */
 .hero-section {
-  padding: 44px 0 60px;
+  padding: 50px 0 70px;
   background: radial-gradient(circle at 80% 20%, rgba(220, 252, 231, 0.6) 0%, rgba(255, 255, 255, 1) 70%);
   overflow: hidden;
   width: 100%;
@@ -568,7 +569,7 @@ img, svg {
   flex-shrink: 0;
 }
 
-/* Glass Panel & Showcase */
+/* Glass Panel */
 .glass-panel {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(20px);
@@ -643,7 +644,7 @@ img, svg {
   display: block;
 }
 
-/* PRICING SECTION */
+/* PRICING SECTION & RESPONSIVE SWITCHER */
 .pricing-section {
   background-color: var(--light-bg);
   width: 100%;
@@ -713,7 +714,6 @@ img, svg {
     max-width: 460px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 35px;
   }
 }
 
@@ -746,7 +746,7 @@ img, svg {
 
 @media (max-width: 992px) {
   .price-featured {
-    transform: none !important; /* CRITICAL: Disable scale transform on mobile to eliminate slider overflow */
+    transform: none;
   }
 }
 
@@ -1148,7 +1148,7 @@ img, svg {
   color: var(--white);
 }
 
-/* Chat Avatars & Components */
+/* Chat Avatar Images */
 .chat-avatar-img {
   width: 36px;
   height: 36px;
@@ -1164,6 +1164,7 @@ img, svg {
   object-fit: cover;
 }
 
+/* Mockup chat & UI elements */
 .mockup-chat-header { display: flex; align-items: center; gap: 8px; padding-bottom: 10px; border-bottom: 1px solid var(--border-light); margin-bottom: 12px; }
 .chat-avatar { width: 34px; height: 34px; background-color: var(--wa-green); color: var(--navy-dark); font-weight: 800; border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative; }
 .status-online { position: absolute; bottom: 0; right: 0; width: 8px; height: 8px; background-color: #22C55E; border: 2px solid var(--white); border-radius: 50%; }
@@ -1467,17 +1468,21 @@ img, svg {
 .wa-msg.bot-reply { background-color: #DCFCE7; }
 .wa-window-footer { padding: 8px; background: var(--white); }
 
-/* PERFECT RESPONSIVE NAVIGATION DRAWER FOR MOBILE (< 992px) */
+/* PERFECT RESPONSIVE NAVIGATION DRAWER FOR MOBILE (< 992px & < 768px) */
 @media (max-width: 992px) {
-  .header-phone,
-  .header-demo-btn {
-    display: none !important; /* CRITICAL: Hides extra phone and demo buttons from header bar so it fits 100% on mobile without duplicate items! */
+  .header-actions .phone-link,
+  .header-actions .btn-primary {
+    display: none !important; /* Hide long phone and book demo from header bar on mobile so it never overflows */
+  }
+  
+  .mobile-only-nav-item {
+    display: block;
   }
 
   .nav-list { 
     display: none; 
     position: absolute; 
-    top: 66px; 
+    top: 68px; 
     left: 0; 
     right: 0; 
     background-color: var(--white); 
